@@ -8,6 +8,7 @@ pod 'FRadioPlayer'
 pod 'Spring', '~> 1.0.3'
 pod 'ObjectMapper', '~> 3.2'
 pod 'SwiftyJSON', '~> 4.0'
+pod "PromiseKit", '~> 6.0'
 end
 
 

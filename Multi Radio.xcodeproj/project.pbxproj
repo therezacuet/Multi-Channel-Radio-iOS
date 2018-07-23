@@ -18,11 +18,14 @@
 		505F265020DFB8120073639A /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F264F20DFB8120073639A /* ChannelListViewController.swift */; };
 		506B4E3520DF75DA00311DA7 /* CategoryCellViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B4E3420DF75DA00311DA7 /* CategoryCellViewTableViewCell.swift */; };
 		506F834B20D2462B0036B777 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F834A20D2462B0036B777 /* SpinnerView.swift */; };
+		5097317820E209F40029C4DF /* ChannelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5097317720E209F40029C4DF /* ChannelList.swift */; };
 		5099D5FA20C3D49A004FCABE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5099D5F920C3D49A004FCABE /* MediaPlayer.framework */; };
 		5099D5FE20C3EE09004FCABE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099D5FD20C3EE09004FCABE /* Track.swift */; };
 		5099D60020C3EE23004FCABE /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099D5FF20C3EE23004FCABE /* RadioStation.swift */; };
 		50CAB0DF20C3A7D5005C06E3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 50CAB0DE20C3A7D5005C06E3 /* Podfile */; };
 		50D3A5AE20E0AEB800C1FE17 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D3A5AD20E0AEB800C1FE17 /* AlamofireWrapper.swift */; };
+		50D3A5B020E0B69600C1FE17 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D3A5AF20E0B69600C1FE17 /* CategoryList.swift */; };
+		50D3A5B420E0C66F00C1FE17 /* HttpParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D3A5B320E0C66F00C1FE17 /* HttpParams.swift */; };
 		55FC89266DCC6AEC5053A4FE /* Pods_Multi_Radio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2194D94B61EB233E8FF5D2 /* Pods_Multi_Radio.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,11 +67,14 @@
 		505F264F20DFB8120073639A /* ChannelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
 		506B4E3420DF75DA00311DA7 /* CategoryCellViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellViewTableViewCell.swift; sourceTree = "<group>"; };
 		506F834A20D2462B0036B777 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		5097317720E209F40029C4DF /* ChannelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelList.swift; sourceTree = "<group>"; };
 		5099D5F920C3D49A004FCABE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5099D5FD20C3EE09004FCABE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		5099D5FF20C3EE23004FCABE /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
 		50CAB0DE20C3A7D5005C06E3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		50D3A5AD20E0AEB800C1FE17 /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
+		50D3A5AF20E0B69600C1FE17 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		50D3A5B320E0C66F00C1FE17 /* HttpParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,8 @@
 			children = (
 				5099D5FD20C3EE09004FCABE /* Track.swift */,
 				5099D5FF20C3EE23004FCABE /* RadioStation.swift */,
+				50D3A5AF20E0B69600C1FE17 /* CategoryList.swift */,
+				5097317720E209F40029C4DF /* ChannelList.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -188,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				50D3A5AD20E0AEB800C1FE17 /* AlamofireWrapper.swift */,
+				50D3A5B320E0C66F00C1FE17 /* HttpParams.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -353,6 +362,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FRadioPlayer/FRadioPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -361,6 +371,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRadioPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -401,8 +412,11 @@
 				506F834B20D2462B0036B777 /* SpinnerView.swift in Sources */,
 				503B5C1620C9091B003C76DD /* RadioPlayer.swift in Sources */,
 				505F265020DFB8120073639A /* ChannelListViewController.swift in Sources */,
+				50D3A5B020E0B69600C1FE17 /* CategoryList.swift in Sources */,
+				5097317820E209F40029C4DF /* ChannelList.swift in Sources */,
 				506B4E3520DF75DA00311DA7 /* CategoryCellViewTableViewCell.swift in Sources */,
 				50D3A5AE20E0AEB800C1FE17 /* AlamofireWrapper.swift in Sources */,
+				50D3A5B420E0C66F00C1FE17 /* HttpParams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

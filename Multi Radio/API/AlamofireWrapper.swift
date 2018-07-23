@@ -5,33 +5,33 @@
 //  Created by Md. Nasir on 25/6/18.
 //  Copyright © 2018 MCC. All rights reserved.
 //
-
+import Foundation
 import Alamofire
 import ObjectMapper
+import PromiseKit
 
 class AlamofireWrapper {
     
     static let sharedInstance = AlamofireWrapper()
     
-    func getCostumers(_ strURL: String, completion:@escaping (Array<Customer>) -> Void, failure:@escaping (Error) -> Void) -> Void{
+    func getCostumers(_ strURL: String) -> Promise<[ChannelList]>{
         
-        Alamofire.request(strURL).responseJSON { response in
-            switch response.result {
-            case .success:
-                //to get JSON return value
-                guard let responseJSON = response.result.value as? Array<[String: AnyObject]> else {
-                    failure(response.result.error!)
-                    return
-                }
-                guard let customers:[Customer] = Mapper<Customer>().mapArray(JSONArray: responseJSON) else {
-                    failure(response.result.error!)
-                    return
-                }
+        return Promise<[ChannelList]>{
+            fullfil, reject -> Void in
+            return Alamofire.request(strURL).responseString {
+                response in
                 
-                completion(customers)
-            case .failure(let error):
-                failure(error)
+                switch(response.result){
+                case .success(let responseString):
+                    print(responseString)
+                    let channelDataResponse = ChannelList(JSONString: "\(responseString)")
+                    fullfil(channelDataResponse.channel_list!)
+                case .failure(let error):
+                    print(error)
+                    reject(error)
+                }
             }
         }
+
     }
 }

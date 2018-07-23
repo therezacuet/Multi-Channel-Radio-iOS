@@ -2,6 +2,15 @@ PODS:
   - Alamofire (4.7.2)
   - FRadioPlayer (0.1.10)
   - ObjectMapper (3.2.0)
+  - PromiseKit (6.2.8):
+    - PromiseKit/CorePromise (= 6.2.8)
+    - PromiseKit/Foundation (= 6.2.8)
+    - PromiseKit/UIKit (= 6.2.8)
+  - PromiseKit/CorePromise (6.2.8)
+  - PromiseKit/Foundation (6.2.8):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.2.8):
+    - PromiseKit/CorePromise
   - Spring (1.0.5)
   - SwiftyJSON (4.1.0)
 
@@ -9,6 +18,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.7)
   - FRadioPlayer
   - ObjectMapper (~> 3.2)
+  - PromiseKit (~> 6.0)
   - Spring (~> 1.0.3)
   - SwiftyJSON (~> 4.0)
 
@@ -17,6 +27,7 @@ SPEC REPOS:
     - Alamofire
     - FRadioPlayer
     - ObjectMapper
+    - PromiseKit
     - Spring
     - SwiftyJSON
 
@@ -24,9 +35,10 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   FRadioPlayer: f803d7b2ad83d5ccbc988ab88d490f4e6489e1fa
   ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
+  PromiseKit: 6788ce1a0ed5448b83d4aaf56b9fc49fb7647d32
   Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: d32f71b372e65fb8bac6350cc187f010b3536e6c
+PODFILE CHECKSUM: 4b9696dc63dec0450c594c288451aa40fa8eed52
 
 COCOAPODS: 1.5.3
